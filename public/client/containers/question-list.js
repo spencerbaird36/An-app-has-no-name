@@ -24,8 +24,8 @@ closeModal() { this.setState({open: false}); }
         <div>
         <button
           key={this.props.title}
-  
-          onClick={this.props.openModal}
+          onClick={() => this.props.selectQuestion(question)}
+          
           className="list-group-item">
           {question.difficulty}
         </button>
